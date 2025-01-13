@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <title>My Projects</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Manas Mittal</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="projects">
+            <h1 style="font-size: 32px;"> Projects</h1>
+            <p style="font-size: 24px;"">Here are some of the projects I've worked on:</p>
+            <div class="project-list">
+                <div class="project-card" onclick="location.href='project-details.html?project=project1'">
+                    <img src="./images/enhanced-xv6.webp" alt="enhanced-xv6">
+                    <h2>Enhanced XV6</h2>
+                </div>
+                
+                <div class="project-card" onclick="location.href='project-details.html?project=project2'">
+                    <img src="./images/concurrency-img.webp" alt="concurrency">
+                    <h2>Concurrency</h2>
+                </div>
+
+                
+                <div class="project-card" onclick="location.href='project-details.html?project=project3'">
+                    <img src="./images/nfs-image.jpeg" alt="nfs">
+                    <h2>Network File System</h2>
+                </div>
+                
+                <div class="project-card" onclick="location.href='project-details.html?project=project4'">
+                    <img src="./images/bash-image.jpeg" alt="custom-c-shell">
+                    <h2>Custom Unix Shell</h2>
+                </div>
+                
+                <div class="project-card" onclick="location.href='project-details.html?project=project5'">
+                    <img src="./images/bms-img.png" alt="bookstore-application">
+                    <h2>BookStore Application</h2>
+                </div>
+                
+               
+        </section>
+
+        <section id="project-details" class="project-details" style="display: none;">
+            <h1 id="project-title"></h1>
+            <img id="project-image" src="" alt="">
+            <p id="project-description"></p>
+            <a id="project-github" href="#" target="_blank" class="cta">View on GitHub</a>
+            <p id="project-technology"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Manas Mittal. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script> 
+</body>
+</html>
