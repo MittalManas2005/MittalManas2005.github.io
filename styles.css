@@ -1,0 +1,185 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f6f2;
+}
+
+
+/* good color over it #02774d */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f7f6f2; 
+}
+
+.logo {
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 70px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    display: flex; 
+    margin-left: 100px;
+}
+
+.intro {
+    text-align: center;
+    margin: 50px 0;
+    text-align: left;
+}
+
+.intro h1 {
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 48px; 
+    margin-top: auto;
+}
+
+.intro h2 {
+    font-size: 72px;
+    font-weight: bold;
+    font-family: 'Helvetica', sans-serif;
+    color: #333;
+    margin: 10px 0;
+    margin-top: 5px;
+    line-height: 1.2;
+}
+.tag {
+    display: inline-block;
+    background-color: #ffcc00;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.intro p {
+    max-width: 600px;
+    margin: 20px 0;
+}
+
+.cta {
+    padding: 10px 20px;
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px; 
+}
+
+.image-section {
+    flex: 1; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 50px; 
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+}
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #333; }
+}
+
+.typing-effect {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #333;
+   
+    animation: 
+        typing calc(100ms * var(--char-count)) steps(var(--char-count), end),
+        blink-caret 750ms step-end infinite;
+    
+    --char-count: 15; 
+}
+
+.typing-done {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #333; /* Static cursor */
+}
+
+.contact {
+    background-color: #f7f6f2; 
+    padding: 50px;
+    text-align: center; 
+    margin-top: 50px; 
+}
+
+.contact h2 {
+    font-size: 36px; 
+    font-family: 'Helvetica', sans-serif; 
+    color: #333; 
+}
+
+.contact p {
+    font-size: 18px; 
+    color: #555; 
+}
+
+.contact a {
+    color: #02774d; 
+    text-decoration: none; 
+}
+
+.contact a:hover {
+    text-decoration: underline; 
+}
+
+footer {
+    background-color: #f7f6f2; /* Match the background color */
+    text-align: center; /* Center the text */
+    padding: 20px; /* Add padding for spacing */
+    position: relative; /* Positioning */
+    bottom: 0; /* Stick to the bottom */
+    width: 100%; /* Full width */
+    margin-top: 20px; /* Space above the footer */
+}
+
+footer p {
+    color: #333; 
+    margin: 0;
+    font-size: 16px; 
+}
+
+.social-icons {
+    margin-top: 20px; 
+    display: flex; 
+    justify-content: left; 
+}
+.social-icons a {
+    margin: 0 20px;
+    font-size: 36px; 
+    color: #333; 
+    text-decoration: none; 
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #02774d;
+    transform: scale(1.2);
+}
