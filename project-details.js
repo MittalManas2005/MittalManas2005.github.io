@@ -11,17 +11,11 @@ document.addEventListener("DOMContentLoaded", function() {
     // Set project details based on the project parameter
     switch (project) {
         case 'project1':
-            projectTitle.textContent = 'Enhanced XV6';
+            projectTitle.textContent = 'Enhanced XV6 and concurrency';
             projectImage.src = './images/enhanced-xv6.webp';
-            projectDescription.textContent = ''; 
-            projectGithub.href = '';
-            projectTechnology.textContent = '';
-            break;
-        case 'project2':
-            projectTitle.textContent = 'Concurrency';
-            projectImage.src = './images/concurrency-img.webp';
-            projectDescription.textContent = 'This is the detailed description of Project 2.';
+            projectDescription.textContent = 'Implemented a Copy-On-Write fork mechanism in the xv6 operating system, reducing memory usage by sharing pages between processes until modified. Also developed a distributed sorting system using threading and dynamic algorithm selection (Count Sort/Merge Sort) for efficient performance.';
             projectGithub.href = 'https://github.com/MittalManas2005/AdvanceOS_Concurrency';
+            projectTechnology.textContent = 'C, xv6 OS, Multithreading, Synchronization (Locks, Semaphores), System Programming, POSIX API';
             break;
         case 'project3':
             projectTitle.textContent = 'Network File System';
